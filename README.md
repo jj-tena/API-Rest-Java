@@ -1,4 +1,4 @@
-# API-Rest--Java
+# API-Rest-Java
 
 This repository shows an example of a Rest API developed in Java, working on the SpringBoot framework and using Maven for project management.
 
