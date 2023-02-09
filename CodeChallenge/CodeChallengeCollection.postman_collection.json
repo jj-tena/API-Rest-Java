@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "b70b0f40-6171-4815-a81a-887f4f62dc4f",
+		"name": "CodeChallengeCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/getusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"getusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/getusersById/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"getusersById",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/deleteUsersById/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"deleteUsersById",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Name3\",\n    \"email\": \"Email3@email.com\",\n    \"birthDate\": \"2021-09-09T15:34:47.485+00:00\",\n    \"address\": {\n        \"id\": 2,\n        \"street\": \"Street2\",\n        \"state\": \"State1\",\n        \"city\": \"City2\",\n        \"country\": \"Country2\",\n        \"zip\": \"Zip2\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/createUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"createUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Name2Updated\",\n    \"email\": \"Email2Updated@email.com\",\n    \"birthDate\": \"2021-09-09T15:34:47.485+00:00\",\n    \"address\": {\n        \"id\": 2,\n        \"street\": \"Street2\",\n        \"state\": \"State1\",\n        \"city\": \"City2\",\n        \"country\": \"Country2\",\n        \"zip\": \"Zip2\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/updateUsersById/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"updateUsersById",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/getusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"getusers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
